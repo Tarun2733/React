@@ -1,0 +1,108 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the whole app */
+.app-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* Input section */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #218838;
+}
+
+/* Task list */
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual task item */
+.task-item {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+/* Green background when completed */
+.task-item.completed {
+  background-color: lightgreen;
+  text-decoration: line-through;
+}
+
+/* Buttons */
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.complete-btn,
+.delete-btn {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.complete-btn {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.complete-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

@@ -1,4 +1,4 @@
-/* General styling */
+/* General body styling */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
@@ -9,100 +9,48 @@ body {
   margin: 0;
 }
 
-/* Container for the whole app */
-.app-container {
+/* Main container */
+.App {
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 350px;
   text-align: center;
+  width: 350px;
 }
 
-/* Input section */
-.input-container {
-  display: flex;
-  gap: 10px;
+/* Heading */
+h1 {
+  font-size: 24px;
+  color: #333;
   margin-bottom: 20px;
 }
 
-.input-container input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.input-container button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.input-container button:hover {
-  background-color: #218838;
-}
-
-/* Task list */
-.list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* Individual task item */
-.task-item {
-  background: white;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-}
-
-/* Green background when completed */
-.task-item.completed {
-  background-color: lightgreen;
-  text-decoration: line-through;
-}
-
-/* Buttons */
-.task-buttons {
-  display: flex;
-  gap: 5px;
-}
-
-.complete-btn,
-.delete-btn {
-  border: none;
-  padding: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.complete-btn {
+/* Button container */
+button {
   background-color: #007bff;
   color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
   border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.complete-btn:hover {
+button:hover {
   background-color: #0056b3;
 }
 
-.delete-btn {
-  background-color: #dc3545;
-  color: white;
+/* Excuse text */
+p {
+  font-size: 18px;
+  color: #444;
+  background: #f8f9fa;
+  padding: 15px;
   border-radius: 5px;
-}
-
-.delete-btn:hover {
-  background-color: #c82333;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  font-weight: bold;
 }
